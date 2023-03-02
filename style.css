@@ -149,14 +149,16 @@ body {
   z-index: 999;
   position: fixed;
   width: 100%;
-  padding: 5px 0;
-  /* background: var(--main-color);  */
+  padding: 0px 0;
+
+  background: var(--dark); 
   /* font-family: "ubuntu", sans-serif; */
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
 .navbar.sticky {
   padding: 5px 0;
+  top: 0;
   background: var(--dark);
 }
 .navbar .max-width {
@@ -733,7 +735,7 @@ nav ul {
     font-size: 25px;
   }
   .home .home-content .text-2 {
-    font-size: 35px;
+    font-size: 70px;
   }
   .home .home-content .text-3 {
     font-size: 35px;
@@ -787,7 +789,7 @@ nav ul {
     padding: 0 23px;
   }
   .home .home-content .text-2 {
-    font-size: 30px;
+    font-size: 55px;
   }
   .home .home-content .text-3 {
     font-size: 32px;
