@@ -8,6 +8,17 @@ window.addEventListener("load", function () {
     AOS.init();
 
 });
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
 $(document).ready(function () {
     $(window).scroll(function () {
         if (this.scrollY > 20) {

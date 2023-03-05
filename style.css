@@ -150,13 +150,14 @@ body {
   position: fixed;
   width: 100%;
   padding: 0px 0;
+  height: 60px;
 
   background: var(--dark); 
   /* font-family: "ubuntu", sans-serif; */
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
-.navbar.sticky {
+.navbar .sticky {
   padding: 5px 0;
   top: 0;
   background: var(--dark);
@@ -187,7 +188,7 @@ body {
 .navbar .menu li a:hover {
   color: var(--main-color);
 }
-.navbar.sticky .menu li a:hover {
+.navbar .sticky .menu li a:hover {
   color: var(--main-color);
 }
 .navbar img {
@@ -208,6 +209,55 @@ nav ul {
   display: none;
   /* shadow: 1px 2px 15px var(--white); */
 }
+
+/* ---styling fixed list of icons */
+ /* Styling for the fixed social media links */
+      #fixed-links {
+        display: none;
+      }
+      
+      @media screen and (min-width: 1000px) {
+        #fixed-links {
+          display: block;
+          position: fixed;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+        }
+
+        #fixed-links ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        #fixed-links li {
+          margin-bottom: 10px;
+        }
+
+        #fixed-links a {
+          display: block;
+          width: 30px;
+          height: 30px;
+                    margin-bottom: 10px;
+
+
+          background-color: var(--dark);
+          border-radius: 50%;
+          text-align: center;
+          line-height: 30px;
+          color: var(--main-color);
+          text-decoration: none;
+        }
+
+        #fixed-links a:hover {
+          background-color: var(--main-color);
+          color: var(--dark);
+
+
+
+        }
+      }
 
 /* --------------------------buttons---------------------- */
 .btn {
