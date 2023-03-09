@@ -744,7 +744,7 @@ nav ul {
     margin-left: 0px;
   }
 }
-@media (max-width: 1104px) {
+@media (max-width: 1110px) {
   .max-width {
     overflow: hidden;
   }
