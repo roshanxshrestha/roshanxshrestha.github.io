@@ -757,14 +757,14 @@ nav ul {
     box-shadow: 1px 2px 30px var(--main-color);
   }
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .max-width {
     overflow: hidden;
     padding: 0 50px;
   }
-}
+} */
 
-@media (max-width: 947px) {
+@media (max-width: 1085px) {
   .max-width {
     overflow: hidden;
   }
