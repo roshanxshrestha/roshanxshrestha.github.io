@@ -15,6 +15,7 @@
   --cursive-font: "Dancing Script", cursive;
   scroll-behavior: smooth;
 }
+
 .light-theme {
   --main-color: #0dbdff;
   --white: #15202a;
@@ -25,8 +26,10 @@
   --cursive-font: "Dancing Script", cursive;
   scroll-behavior: smooth;
 }
-.light-theme .home{
-  background-image: url(./assets/images/roshanshrestha1.jpg);
+
+.light-theme .home {
+  background: url(./assets/images/roshanshrestha.png) no-repeat right bottom var(--dark);
+  background-size: contain;
 }
 
 /* global setting --------------------------------------------------------*/
@@ -36,6 +39,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 .max-width {
   max-width: 1300px;
   padding: 0 80px;
@@ -52,6 +56,7 @@
   font-family: "Poppins", sans-serif;
   color: var(--white);
 }
+
 .about .about-content,
 .services .serv-content,
 .skills .skills-content,
@@ -62,9 +67,11 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 section {
   padding: 100px 0;
 }
+
 section .title {
   position: relative;
   font-weight: 500;
@@ -77,6 +84,7 @@ section .title {
    */
   font-family: "Poppins", sans-serif;
 }
+
 section .title::before {
   content: "";
   position: absolute;
@@ -87,6 +95,7 @@ section .title::before {
   background: var(--white);
   transform: translatex(-50%);
 }
+
 section .title::after {
   font-size: 15px;
   position: absolute;
@@ -107,9 +116,11 @@ section .title::after {
   background-color: var(--dark);
   z-index: 999;
 }
+
 .page-loader.fade-out {
   opacity: 0;
 }
+
 .page-loader::before {
   content: "";
   position: absolute;
@@ -124,9 +135,11 @@ section .title::after {
   background-color: var(--dark);
   z-index: 999;
 }
+
 .page-loader.fade-out {
   opacity: 0;
 }
+
 #clackers {
   /*   border: 1px solid white; */
   display: block;
@@ -137,13 +150,16 @@ section .title::after {
   animation: pageLoader 1s linear infinite;
   transition: all 0.6s ease;
 }
+
 #iconn {
   width: 30px;
   cursor: pointer;
 }
+
 body {
   background: #231f20;
 }
+
 /* ---------------navbar styling--------- */
 .navbar {
   overflow: hidden;
@@ -153,23 +169,26 @@ body {
   padding: 0px 0;
   height: 60px;
 
-  background: var(--dark); 
+  background: var(--dark);
   /* font-family: "ubuntu", sans-serif; */
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
-    /* box-shadow: 0 1px 5px 0 var(--white-light); */
+  /* box-shadow: 0 1px 5px 0 var(--white-light); */
 
 }
+
 .navbar .sticky {
   padding: 5px 0;
   top: 0;
   background: var(--dark);
 }
+
 .navbar .max-width {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar .logo a {
   color: var(--white);
   font-size: 35px;
@@ -180,6 +199,7 @@ body {
   list-style: none;
   display: inline-block;
 }
+
 .navbar .menu li a {
   color: var(--white);
   font-size: 18px;
@@ -188,17 +208,21 @@ body {
   margin-right: 10px;
   transition: color 0.3s ease;
 }
+
 .navbar .menu li a:hover {
   color: var(--main-color);
 }
+
 .navbar .sticky .menu li a:hover {
   color: var(--main-color);
 }
+
 .navbar img {
   margin-left: 10px;
   cursor: pointer;
   text-align: right;
 }
+
 nav ul {
   flex: 1;
   text-align: right;
@@ -214,53 +238,53 @@ nav ul {
 }
 
 /* ---styling fixed list of icons */
- /* Styling for the fixed social media links */
-      #fixed-links {
-        display: none;
-      }
-      
-      @media screen and (min-width: 1000px) {
-        #fixed-links {
-          display: block;
-          position: fixed;
-          top: 50%;
-          right: 20px;
-          transform: translateY(-50%);
-        }
+/* Styling for the fixed social media links */
+#fixed-links {
+  display: none;
+}
 
-        #fixed-links ul {
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
+@media screen and (min-width: 1000px) {
+  #fixed-links {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
 
-        #fixed-links li {
-          margin-bottom: 10px;
-        }
+  #fixed-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-        #fixed-links a {
-          display: block;
-          width: 30px;
-          height: 30px;
-                    margin-bottom: 10px;
+  #fixed-links li {
+    margin-bottom: 10px;
+  }
 
-
-          background-color: var(--dark);
-          border-radius: 50%;
-          text-align: center;
-          line-height: 30px;
-          color: var(--main-color);
-          text-decoration: none;
-        }
-
-        #fixed-links a:hover {
-          background-color: var(--main-color);
-          color: var(--dark);
+  #fixed-links a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
 
 
+    background-color: var(--dark);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: var(--main-color);
+    text-decoration: none;
+  }
 
-        }
-      }
+  #fixed-links a:hover {
+    background-color: var(--main-color);
+    color: var(--dark);
+
+
+
+  }
+}
 
 /* --------------------------buttons---------------------- */
 .btn {
@@ -279,14 +303,17 @@ nav ul {
   user-select: none;
   border: none;
 }
+
 .btn-default {
   border: 2px solid var(--main-color);
-  
+
 }
+
 .btn-default:hover {
   color: var(--dark);
   background-color: var(--main-color);
 }
+
 .float-button {
   display: inline-flex;
   padding: 1px;
@@ -302,6 +329,7 @@ nav ul {
   color: red;
   cursor: default;
 }
+
 .theme-btn {
   display: inline-flex;
   padding: 4px;
@@ -319,10 +347,12 @@ nav ul {
   border: none;
   background-color: var(--dark-light);
 }
+
 .theme-btn:hover {
   color: var(--white);
   background-color: var(--main-color);
 }
+
 .fas {
   font-size: 20px;
 }
@@ -331,19 +361,22 @@ nav ul {
 .home {
   overflow: hidden;
   display: flex;
-  
+
   height: 100vh;
   color: whitesmoke;
   min-height: 500px;
   /* font-family: "Ubuntu", sans-serif; */
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--dark);
   animation: zoomInOut 20s ease infinite;
 }
-.home{
-  background: url("./assets/images/roshanxshrestha.png") no-repeat center;
+
+.home {
+  background: url(./assets/images/roshanshrestha.png) no-repeat right bottom var(--dark);
+  background-size: contain;
 
 }
+
 .home .max-width {
   margin: auto 0 auto 40px;
 }
@@ -352,20 +385,23 @@ nav ul {
   font-size: 27px;
   color: var(--main-color);
 }
+
 .home .home-content .text-2 {
   font-size: 40px;
   letter-spacing: 0.1em;
   font-weight: 600;
   margin-left: -3px;
-  color:var(--main-color);
+  color: var(--main-color);
   font-family: 'Orbitron', sans-serif;
 }
+
 .home .home-content .text-3 {
   font-size: 40px;
   margin: 5px 0;
   padding-bottom: 20px;
 
 }
+
 .home .home-content .text-3 span {
   color: var(--main-color);
   font-weight: 500;
@@ -377,13 +413,14 @@ nav ul {
 .about .mySlides {
   opacity: 1;
   transition: opacity 3s ease-in-out;
-    display: none;
+  display: none;
 
 }
 
 .about .mySlides .fade {
   opacity: 0;
 }
+
 .about .title::after {
   content: "Who am I?";
   font-size: 20px;
@@ -407,19 +444,23 @@ nav ul {
 .about .about-content .right {
   width: 55%;
 }
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
   color: var(--white);
 }
+
 .about .about-content .right .text span {
   color: var(--main-color);
 }
+
 .about .about-content .right p {
   text-align: justify;
   color: var(--white);
 }
+
 .about .about-content .right .btn-default {
   margin-top: 25px;
 }
@@ -433,6 +474,7 @@ nav ul {
 .services .title::before {
   width: 218px;
 }
+
 .services .title::after {
   content: "What I  provide?";
   padding: 5px;
@@ -465,9 +507,11 @@ nav ul {
   color: var(--main-color);
   transition: color 0.3s ease;
 }
+
 .services .serv-content .card:hover i {
   color: var(--white);
 }
+
 .services .serv-content .card a .text {
   font-size: 25px;
   font-weight: 500;
@@ -475,9 +519,11 @@ nav ul {
   transition: color 0.3s ease;
   color: var(--white);
 }
+
 .services .serv-content .card:hover .text {
   color: var(--main-color);
 }
+
 .services .serv-content p {
   color: var(--white);
 }
@@ -490,6 +536,7 @@ nav ul {
 .skills .title::before {
   width: 160px;
 }
+
 .skills .title::after {
   content: "What I know?";
   padding: 5px;
@@ -498,37 +545,45 @@ nav ul {
   color: var(--main-color);
   background: var(--dark);
 }
+
 .skills .skills-content .column {
   width: calc(50% - 30px);
 
 }
+
 .skills .skills-content .left .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   color: white;
 }
+
 .skills .skills-content .left p {
   text-align: justify;
 }
+
 .skills .skills-content .right .bars {
   margin-bottom: 8px;
 }
+
 .skills .skills-content .right .info {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .skills .skills-content .right span {
   font-weight: 500;
   font-size: 15px;
 }
+
 .skills .skills-content .right .line {
   height: 1px;
   width: 100%;
   background: var(--main-color);
   position: relative;
 }
+
 /* .skills .skills-content .right .line::before {
   content: "";
   position: absolute;
@@ -568,6 +623,7 @@ nav ul {
 .projects .title::before {
   width: 218px;
 }
+
 .projects .title::after {
   content: "What I designed?";
   padding: 5px;
@@ -576,6 +632,7 @@ nav ul {
   color: var(--main-color);
   background: var(--dark-light);
 }
+
 .projects .carousel .card {
   background: var(--dark);
   border-radius: 6px;
@@ -584,6 +641,7 @@ nav ul {
   transition: color 0.3s ease;
   /* box-shadow: 1px 2px 15px var(--white-light); */
 }
+
 .projects .carousel .card .box {
   display: flex;
   flex-direction: column;
@@ -591,6 +649,7 @@ nav ul {
   justify-content: center;
   transition: color 0.3s ease;
 }
+
 .projects .carousel a .card .text {
   color: var(--white);
   font-size: 25px;
@@ -598,13 +657,16 @@ nav ul {
   margin: 10px 0 7px 0;
   transition: color 0.3s ease;
 }
+
 .projects .carousel a .card p {
   color: var(--white);
   transition: color 0.3s ease;
 }
+
 .projects .carousel a .card:hover .text {
   color: var(--main-color);
 }
+
 .projects .carousel .card img {
   height: 150px;
   width: 150px;
@@ -613,6 +675,7 @@ nav ul {
   border: 0px solid var(--white-light);
   box-shadow: 1px 2px 15px var(--white-light);
 }
+
 .projects .carousel .card video {
   height: 150px;
   width: 150px;
@@ -621,14 +684,17 @@ nav ul {
   border: 0px solid var(--white-light);
   box-shadow: 1px 2px 15px var(--white-light);
 }
+
 .projects .carousel .card:hover img {
   border: 0px solid var(--main-color);
   box-shadow: 1px 2px 15px var(--main-color);
 }
+
 .projects .carousel .card:hover video {
   border: 0px solid var(--main-color);
   box-shadow: 1px 2px 15px var(--main-color);
 }
+
 .projects .carousel .card:hover .box {
   transform: scale(1.05);
   /* box-shadow: 1px 2px 15px var(--main-color); */
@@ -638,6 +704,7 @@ nav ul {
   text-align: center;
   margin-top: 20px;
 }
+
 .owl-dot {
   height: 13px;
   width: 13px;
@@ -646,10 +713,12 @@ nav ul {
   border-radius: 50%;
   border: 2px solid var(--main-color) !important;
 }
+
 .owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
+
 .owl-dot.active,
 .owl-dot:hover {
   background: var(--main-color) !important;
@@ -660,9 +729,11 @@ nav ul {
 .contact {
   background: var(--dark);
 }
+
 .contact .title::before {
   width: 218px;
 }
+
 .contact .title::after {
   content: "Get in Touch!";
   padding: 5px;
@@ -671,6 +742,7 @@ nav ul {
   color: var(--main-color);
   background: var(--dark);
 }
+
 .contact .text {
   color: var(--white);
   font-size: 25px;
@@ -678,22 +750,27 @@ nav ul {
   margin: 10px 0 7px 0;
   transition: color 0.3s ease;
 }
+
 .contact .column i {
   color: var(--main-color);
   transition: color 0.3s ease;
-  
+
 }
-.fa-phone{
+
+.fa-phone {
   transform: rotateY(180deg);
 }
+
 .contact p {
   color: var(--white);
   transition: color 0.3s ease;
 }
+
 .contact a {
   color: var(--white);
   transition: color 0.3s ease;
 }
+
 .contact a:hover {
   color: var(--main-color);
   transition: color 0.3s ease;
@@ -702,6 +779,7 @@ nav ul {
 .contact .contact-content {
   text-align: center;
 }
+
 .contact .contact-content .column {
   width: calc(100% / 3);
   padding: 0 15px;
@@ -710,6 +788,7 @@ nav ul {
 .contact .social-links {
   text-align: center;
 }
+
 .contact .social-links a {
   display: inline-flex;
   height: 100px;
@@ -720,9 +799,11 @@ nav ul {
   justify-content: center;
   transition: color 0.3s ease;
 }
+
 .contact .social-links a:hover {
   color: var(--main-color);
 }
+
 .contact .copyright {
   margin: 80px 0 0;
   width: 100%;
@@ -732,9 +813,11 @@ nav ul {
   border-top: 1px solid var(--white-light);
   color: var(--dark);
 }
+
 .contact .copyright p {
   color: var(--white-light);
 }
+
 .contact .copyright p a {
   color: var(--main-color);
 }
@@ -746,10 +829,12 @@ nav ul {
     margin-left: 0px;
   }
 }
+
 @media (max-width: 1110px) {
   .max-width {
     overflow: hidden;
   }
+
   .about .about-content .left img {
     height: 330px;
     width: 330px;
@@ -762,6 +847,7 @@ nav ul {
   .max-width {
     overflow: hidden;
   }
+
   /* .menu-btn {
     z-index: 999;
     display: block;
@@ -769,6 +855,7 @@ nav ul {
   .menu-btn i.active:before {
     content: "\f00d";
   }
+
   .navbar .menu {
     position: fixed;
     height: 100vh;
@@ -780,9 +867,11 @@ nav ul {
     padding-top: 80px;
     transition: all 0.3s ease;
   }
+
   .navbar .menu.active {
     left: 0%;
   }
+
   .navbar .menu li {
     display: block;
   }
@@ -792,63 +881,111 @@ nav ul {
     margin: 20px 0;
     font-size: 25px;
   }
+
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size: 40px;
   }
+
   .home .home-content .text-3 {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .about .about-content .column {
     width: 100%;
   }
+
   .max-width {
     max-width: 930px;
   }
+
   .about .about-content .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
+
   .about .about-content .right {
     flex: 100%;
   }
+
   .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
+
   .services .serv-content .card i {
     font-size: 40px;
   }
+
   .services .serv-content .card .text {
     font-size: 23px;
   }
+
   .services .serv-content .card p {
     font-size: 18px;
   }
+
   .skills .skills-content .column {
     width: 100%;
     margin-bottom: 35px;
   }
+
   .skills .skills-content p {
     font-size: 15px;
   }
+
   .contact .contact-content .column {
     width: calc(50%);
     padding: 15px 15px;
   }
+
   .contact-content:not(:last-child) {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 1100px) {
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+  }
+
+  .home .home-content .text-2 {
+    margin-top: 50px;
+
+  }
+
+  .home .home-content .text-3 {
+    margin-top: 10px;
+    margin-bottom: 70%;
+  }
+
+  .home {
+    background: url(./assets/images/roshanshrestha-min.png) no-repeat right bottom var(--dark);
+    background-size: contain;
+  }
+
+  .light-theme .home {
+    background: url(./assets/images/roshanshrestha-min.png) no-repeat right bottom var(--dark);
+    background-size: contain;
+  }
+
+
+}
+
 @media (max-width: 690px) {
   .max-width {
     overflow: hidden;
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
-    font-size: 55px;
+    font-size: 40px;
   }
+
   .home .home-content .text-3 {
     font-size: 32px;
   }
@@ -856,49 +993,60 @@ nav ul {
   .about .about-content .right .text {
     font-size: 20px;
   }
+
   .about .about-content .right p {
     font-size: 15px;
   }
+
   .services .serv-content .card {
     width: 100%;
   }
+
   .services .serv-content .card i {
     font-size: 30px;
   }
+
   .services .serv-content .card .text {
     font-size: 20px;
   }
+
   .services .serv-content .card p {
     font-size: 15px;
   }
+
   .contact .contact-content .column {
     width: calc(100%);
     padding: 15px 15px;
   }
+
   .contact-content:not(:last-child) {
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 500px) {
   .max-width {
     overflow: hidden;
     padding: 0 23px;
   }
+
   .home .home-content .text-2 {
     font-size: 28px;
   }
+
   .home .home-content .text-3 {
     font-size: 25px;
   }
+
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
   }
 }
+
 @media (max-width: 320px) {
   .max-width {
     overflow: hidden;
     margin-left: 0px;
   }
 }
-
