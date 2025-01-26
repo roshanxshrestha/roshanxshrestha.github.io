@@ -95,3 +95,26 @@ document.addEventListener("click", function (e) {
     toggleNav();
   }
 });
+
+// hash remover from tab
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Detect hash changes
+  window.addEventListener("hashchange", () => {
+    // Use history.replaceState to remove the hash from the URL
+    history.replaceState(
+      null,
+      document.title,
+      window.location.pathname + window.location.search
+    );
+  });
+
+  // Optionally remove the hash when the page loads
+  if (window.location.hash) {
+    history.replaceState(
+      null,
+      document.title,
+      window.location.pathname + window.location.search
+    );
+  }
+});
