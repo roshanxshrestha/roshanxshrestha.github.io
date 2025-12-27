@@ -28,7 +28,7 @@
 }
 
 .light-theme .home {
-  background: url(./assets/images/roshanshrestha.png) no-repeat right bottom var(--dark);
+  background: url(./assets/images/1roshanshrestha.png) no-repeat right bottom var(--dark);
   background-size: contain;
 }
 
@@ -372,7 +372,7 @@ nav ul {
 }
 
 .home {
-  background: url(./assets/images/roshanshrestha.png) no-repeat right bottom var(--dark);
+  background: url(./assets/images/1roshanshrestha.png) no-repeat right bottom var(--dark);
   background-size: contain;
 
 }
@@ -964,12 +964,12 @@ nav ul {
   }
 
   .home {
-    background: url(./assets/images/roshanshrestha-min.png) no-repeat right bottom var(--dark);
+    background: url(./assets/images/1roshanshrestha-min.png) no-repeat right bottom var(--dark);
     background-size: contain;
   }
 
   .light-theme .home {
-    background: url(./assets/images/roshanshrestha-min.png) no-repeat right bottom var(--dark);
+    background: url(./assets/images/1roshanshrestha-min.png) no-repeat right bottom var(--dark);
     background-size: contain;
   }
 
